@@ -81,8 +81,6 @@ Move-Item -Force models\best.pt models\pothole.pt
 # Train / fine-tune on merged datasets (use --device 0 for NVIDIA GPU)
 .\.venv\Scripts\python.exe trainer.py --device 0
 
-# Run unit tests
-.\.venv\Scripts\python.exe -m unittest discover -v
 ```
 
 > **Tip**: Set `VIDEO_PATH = 0` in `detection.py` to use your live webcam instead of `pothole1.mp4`. Enable **Windows Settings > Privacy & security > Location** for GPS tags on saved photos in `pothole_photos/`.
@@ -97,8 +95,8 @@ FroggerCV2/
 ├── capture_location.py   # Background GPS + IP location tagger
 ├── summary.py            # CLI stats + interactive OpenStreetMap heatmap server
 ├── trainer.py            # Multi-dataset downloader, trainer & validation gate
-├── document/             # Sample detection outputs & training plots
-└── tests/                # Unit test suite (23 offline tests)
+├── models/               # contains pothole.pt
+└── document/             # Sample detection outputs & training plots
 ```
 
 ## Attribution
