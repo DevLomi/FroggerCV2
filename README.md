@@ -1,6 +1,6 @@
 # FroggerCV — Real-Time Road Pothole Detection, Geotagging & Heatmap Analytics
 
-FroggerCV is an end-to-end computer vision pipeline that detects road potholes in dashcam video and live camera streams using **YOLOv8**, automatically geotags high-confidence captures with **GPS coordinates and local timestamps**, and generates an interactive **OpenStreetMap + Material 3 heatmap dashboard**.
+FroggerCV is an end-to-end computer vision pipeline that detects road potholes in dashcam video and live camera streams using **YOLOv8**, automatically geotags high-confidence captures with **GPS coordinates and local timestamps**, and generates an interactive **Heatmap dashboard**.
 
 <p align="center">
   <img src="document/detection_result_1.jpg" width="49%" alt="Dashcam pothole detection sample 1" />
@@ -62,7 +62,7 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-### 2. Download Model (`models/pothole.pt`)
+### 2. Download Model (`models/pothole.pt`) (OPTIONAL/model provided)
 
 ```powershell
 .\.venv\Scripts\hf.exe download Samdutse/pothole-yolov8 best.pt --local-dir models
